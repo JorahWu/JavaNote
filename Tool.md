@@ -13,13 +13,12 @@ Git 是分布式版本控制系统（Distributed Version Control System，简称
 本地仓库和远程仓库：
 
 * 本地仓库：是在开发人员自己电脑上的 Git 仓库		
+
 * 远程仓库：是在远程服务器上的 Git 仓库
 
-
+  
 
 ***
-
-
 
 ### 工作流程
 
@@ -32,8 +31,6 @@ Git 是分布式版本控制系统（Distributed Version Control System，简称
 4．提交到本地仓库。本地仓库中保存修改的各个历史版本
 
 5．修改完成后，需要和团队成员共享代码时，将代码 push 到远程仓库
-
-
 
 ### Git安装
 
@@ -53,15 +50,11 @@ GitLab（地址： https://about.gitlab.com/ ）是一个用于仓库管理系�
 
 
 
-
-
 ***
-
-
 
 ## 环境配置
 
-安装 Git 后首先要设置用户名称和 email 地址，因为每次 Git 提交都会使用该用户信息，此信息和注册的代码托管平台的信息无关
+安装 Git 后首先要设置用户名称和 email 地址，因为每次 Git 提交都会使用该用户信息，**此信息和注册的代码托管平台的信息无关**
 
 设置用户信息：
 
@@ -78,8 +71,6 @@ GitLab（地址： https://about.gitlab.com/ ）是一个用于仓库管理系�
 
 
 ***
-
-
 
 ## 本地仓库
 
@@ -113,18 +104,12 @@ GitLab（地址： https://about.gitlab.com/ ）是一个用于仓库管理系�
 
 
 
-
-
 ***
-
-
-
-
 
 
 ### 工作过程
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Tool/Git基本工作流程.png)
+![](images/Git基本工作流程.png)
 
 版本库：.git 隐藏文件夹就是版本库，版本库中存储了很多配置信息、日志信息和文件版本信息等
 
@@ -132,7 +117,7 @@ GitLab（地址： https://about.gitlab.com/ ）是一个用于仓库管理系�
 
 暂存区：.git 文件夹中有很多文件，其中有一个 index 文件就是暂存区，也可以叫做 stage，暂存区是一个临时保存修改文件的地方
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Tool/文件流程图.png)
+![](images/文件流程图.png)
 
 
 
@@ -165,8 +150,6 @@ GitLab（地址： https://about.gitlab.com/ ）是一个用于仓库管理系�
 
 
 ***
-
-
 
 #### 文件状态
 
@@ -210,10 +193,6 @@ doc/**/*.pdf
 
 ***
 
-
-
-
-
 ## 远程仓库
 
 ### 工作流程
@@ -224,7 +203,7 @@ pull = fetch + merge
 
 fetch 是从远程仓库更新到本地仓库，pull是从远程仓库直接更新到工作空间中
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Tool/图解远程仓库工作流程.png)
+![](images/图解远程仓库工作流程.png)
 
 
 
@@ -288,7 +267,7 @@ git push <shortname><branchname>：上传本地指定分支到远程仓库
 
 ## 版本管理
 
-![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Tool/版本切换.png)
+![](images/版本切换.png)
 
 命令：git reset --hard 版本唯一索引值
 
@@ -338,7 +317,7 @@ git merge branch-name：合并指定分支到当前分支
 
 有时候合并操作不会如此顺利。 如果你在两个不同的分支中，对同一个文件的同一个部分进行了不同的修改，Git 就没办法合并它们，同时会提示文件冲突。此时需要我们打开冲突的文件并修复冲突内容，最后执行 git add 命令来标识冲突已解决
 
-​	![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Tool/合并分支冲突.png)
+​	![](images/合并分支冲突.png)
 
 
 
@@ -398,7 +377,7 @@ git push origin :refs/tags/ tag-name：删除远程标签
 
 ***
 
-
+![image-20221116221904763](images/image-20221116221904763.png)
 
 ## IDEA操作
 

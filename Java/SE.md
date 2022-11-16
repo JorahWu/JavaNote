@@ -428,7 +428,7 @@ public static void main(String[] args) {
 
 * 一个数组内存图
 
-  ![](https://seazean.oss-cn-beijing.aliyuncs.com/img/Java/数组内存分配-一个数组内存图.png)
+  ![](images/数组内存分配-一个数组内存图.png)
 
 * 两个数组内存图
 
@@ -479,38 +479,15 @@ public static void main(String[] args) {
   
   * m 表示这个二维数组，可以存放多少个一维数组，行
   * n 表示每一个一维数组，可以存放多少个元素，列
+  
 * 静态初始化
   * 数据类型[][] 变量名 = new 数据类型 [][]{{元素1, 元素2...} , {元素1, 元素2...} 
+  
   * 数据类型[][] 变量名 = {{元素1, 元素2...}, {元素1, 元素2...}...}
+  
   * `int[][] arr = {{11,22,33}, {44,55,66}}`
-
-遍历：
-
-```java
-public class Test1 {
-    /*
-        步骤:
-            1. 遍历二维数组，取出里面每一个一维数组
-            2. 在遍历的过程中，对每一个一维数组继续完成遍历，获取内部存储的每一个元素
-     */
-    public static void main(String[] args) {
-        int[][] arr = {{11, 22, 33}, {33, 44, 55}};
-        // 1. 遍历二维数组，取出里面每一个一维数组
-        for (int i = 0; i < arr.length; i++) {
-            //System.out.println(arr[i]);
-            // 2. 在遍历的过程中，对每一个一维数组继续完成遍历，获取内部存储的每一个元素
-            //int[] temp = arr[i];
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(arr[i][j]);
-            }
-        }
-    }
-}
-```
-
-
-
-
+  
+    
 
 ****
 
@@ -967,8 +944,6 @@ Debug 是供程序员使用的程序调试工具，它可以用于查看程序�
 
 
 ***
-
-
 
 
 
